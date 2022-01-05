@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="/sound/favicon-32x32.png" />
+  </head>
+
+  <body>
+    <div class="piano-box">
+      <div class="display-box">
+        <input type="text" />
+        <button id="save" onclick="saveNode()">SAVE</button>
+      </div>
+
+      <br />
+      <br />
+      <div class="piano-keys-list">
+        <div class="piano-key" onclick="run('C4')">
+          <div class="black-key one"></div>
+          <span>C4</span>
+        </div>
+
+        <div class="piano-key" onclick="run('D4')">
+          <div class="black-key two"></div>
+          <span>D4</span>
+        </div>
+
+        <div class="piano-key" onclick="run('E4')">
+          <div class="black-key three"></div>
+          <span>E4</span>
+        </div>
+
+        <div class="piano-key" onclick="run('F4')"><span>F4</span></div>
+        <div class="piano-key" onclick="run('G4')">
+          <div class="black-key four"></div>
+          <span>G4</span>
+        </div>
+
+        <div class="piano-key" onclick="run('A4')">
+          <div class="black-key five"></div>
+          <span>A4</span>
+        </div>
+
+        <div class="piano-key" onclick="run('B4')"><span>B4</span></div>
+        <div class="piano-key" onclick="run('C5')"><span>C5</span></div>
+      </div>
+      <!-- <button>C4</button>
+    <button onclick="run('D4')">D4</button>
+    <button onclick="run('E4')">E4</button>
+    <button onclick="run('F4')">F4</button>
+    <button onclick="run('G4')">G4</button>
+    <button onclick="run('A4')">A4</button>
+    <button onclick="run('B4')">B4</button>
+    <button onclick="run('C5')">C5</button> -->
+
+      <ul class="nodes"></ul>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
